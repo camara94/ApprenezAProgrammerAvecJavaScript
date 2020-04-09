@@ -11,3 +11,9 @@ Dans ce cours, je vais revoir les bases du langage de programmation JavaScript e
 * Utiliser les données et les types de données dans JavaScript.
 * Gérer la logique d'un programme en JavaScript (conditions, boucles et erreurs).
 * Écrire du code propre et facile à maintenir à l'aide de méthodes en JavaScript.
+
+## Les variables en JavaScript
+Une variable est caractérisée par trois facteurs à savoir:
+1. son type: c'est à dire le  type de valeur qu'elle peut contenir<br>Par exemple: un nombre ou du texte
+2. son nom: c'est un identifiant qui permet de determiner de façon unique la variable et le nom doit être explicite c'est à dire il doit permettre aux programmeurs de savoir ce que peut contenir la variable <br/>Exemple: **quantity**  (ou encore pire,  **qty**), ajoutez des détails :  **quantityInStock**
+3. valeur: ce sont des données qu'on manipile dans nos programmes<br>Exemple: <code>nomEtudiant="Camara"</code>
