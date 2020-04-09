@@ -17,3 +17,9 @@ Une variable est caractérisée par trois facteurs à savoir:
 1. son type: c'est à dire le  type de valeur qu'elle peut contenir<br>Par exemple: un nombre ou du texte
 2. son nom: c'est un identifiant qui permet de determiner de façon unique la variable et le nom doit être explicite c'est à dire il doit permettre aux programmeurs de savoir ce que peut contenir la variable <br/>Exemple: **quantity**  (ou encore pire,  **qty**), ajoutez des détails :  **quantityInStock**
 3. valeur: ce sont des données qu'on manipile dans nos programmes<br>Exemple: <code>nomEtudiant="Camara"</code>
+
+## Les types de variables en JavaScript
+Dans ce chapitre, vous avez découvert les trois principaux types de données primitifs en JavaScript :
+* number (nombre) ;
+* boolean (valeur logique) ;
+* string (chaîne de caractères).
