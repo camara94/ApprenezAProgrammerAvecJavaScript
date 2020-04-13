@@ -23,3 +23,9 @@ Dans ce chapitre, vous avez découvert les trois principaux types de données pr
 * number (nombre) ;
 * boolean (valeur logique) ;
 * string (chaîne de caractères).
+
+## Résumé sur les Objets en JavaScript
+1. les objets avec les paires clés/valeurs en notation JSON. 
+2. Ils permettent d'enregistrer plusieurs éléments de données associés dans une même variable ;
+3. la notation pointée (dot) qui donne accès aux valeurs d'un objet et la possibilité de les modifier ;
+4. les classes, et comment l'utilisation de classes peut vous permettre de créer des objets plus facilement et de façon plus lisible.
