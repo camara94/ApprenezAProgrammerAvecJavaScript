@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var xhr = new XMLHttpRequest();
+				xhr.open("GET", "https://api.example.com/data.json", true);
+				xhr.onreadystatechange = function() {
+				  if (xhr.readyState == 4) {
+				    // JSON.parse does not evaluate the attacker's scripts.
+				    var resp = JSON.parse(xhr.responseText);
+				  }
+				}
+				xhr.send();
+				chrome.runtime.onMessage.addListener(
+			    function(request, sender, sendResponse) {
+			      if (request.contentScriptQuery == 'fetchUrl') {
+			        // WARNING: SECURITY PROBLEM - a malicious web page may abuse
+			        // the message handler to get access to arbitrary cross-origin
+			        // resources.
+			        fetch(request.url)
+			            .then(response => response.text())
+			            .then(text => sendResponse(text))
+			            .catch(error => error)
+			        return true;  // Will respond asynchronously.
+			      }
+			    });
+							chrome.runtime.sendMessage(
+			    {contentScriptQuery: 'fetchUrl',
+			     url: 'https://another-site.com/price-query?itemId=' +
+			              encodeURIComponent(request.itemId)},
+			    response => parsePrice(response.text()));
+
+		</script>
+		<script type="module"  src="../js/test.js"></script>
+	</body>
+</html>
