@@ -17,5 +17,7 @@ class Book {
 }
 
 let myBook1 = new Book("JavaScript pour le SPA", "Camara Laby Damaro", 50, true);
+let myBook2 = new Book("Java EE Spring boot", "Camara Laby Damaro", 50, false);
 console.log( myBook1 );
+console.log( myBook2 );
 //export { myBook1 };
