@@ -29,3 +29,9 @@ Dans ce chapitre, vous avez découvert les trois principaux types de données pr
 2. Ils permettent d'enregistrer plusieurs éléments de données associés dans une même variable ;
 3. la notation pointée (dot) qui donne accès aux valeurs d'un objet et la possibilité de les modifier ;
 4. les classes, et comment l'utilisation de classes peut vous permettre de créer des objets plus facilement et de façon plus lisible.
+
+## Résumé en sur les Array en JavaScript
+1. vous avez appris à connaître les collections ;
+2. vous avez exploré la collection la plus courante en JavaScript : le tableau ;
+3. vous avez appris à créer des tableaux, à les remplir, et vu certains outils de base pour les manipuler ;
+4. enfin, vous avez découvert les notions de sets et de maps.

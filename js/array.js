@@ -22,7 +22,8 @@ let myFamily = new Array(
 						firstBrother, 
 						secondSister, 
 						secondBrother, 
-						me);
+						me
+					);
 
 myFamily.forEach( (personne, index) => {
 
